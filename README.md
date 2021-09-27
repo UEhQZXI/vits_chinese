@@ -24,7 +24,7 @@ python train.py -c configs/baker_base.json -m baker_base
 # 测试
 python vits_strings.py
 
-# 上面的模型训练出来后存在，明显停顿的问题
-# 原因：
-# 1，本来已经在音素后面强插边界了，VITS又强插边界了，具体是配置参数："add_blank": true
-# 2，可能影响，随机时长预测，具体配置参数：use_sdp=True,
+上面的模型训练出来后存在，明显停顿的问题
+原因：
+1，本来已经在音素后面强插边界了，VITS又强插边界了，具体是配置参数："add_blank": true
+2，可能影响，随机时长预测，具体配置参数：use_sdp=True,
